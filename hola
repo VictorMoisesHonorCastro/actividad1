@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class hola{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("en este programa tendremos que fenerar un algorismo que pida el radio,"
+				+ "\npara calcular el perimetro y el area de la circunferencia");
+		Scanner scn = new Scanner(System.in);
+		float r = 0; // R de radio, pediremos por pantalla al usuario
+		float p = 0; // valor donde guardaremos el perimetro
+		float a = 0; // valor donde guardaremos el area
+		float pi = (float) Math.PI;// inicializamos pi en la variable pi
+		// pedimos radio
+
+		System.out.println("Por favor, inserte el radio");
+		r = scn.nextInt();
+		scn.close();
+
+		// operaciones
+		p = 2 * pi * r;
+		a = pi * r * r;
+
+		System.out.println("El perimetro es: " + p);
+		System.out.println("El area es: " + a);
+	}
+
+}
